@@ -1,0 +1,345 @@
+/* ---------- GLOBAL RESET ---------- */
+* {
+    font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif !important;
+    box-sizing: border-box;
+}
+
+/* ---------- MAIN BACKGROUND ---------- */
+.stApp {
+    background-color: #06060D !important;
+    color: #E8E8E8 !important;
+}
+
+/* ---------- SIDEBAR ---------- */
+[data-testid="stSidebar"] {
+    background-color: #080810 !important;
+    border-right: 1px solid #1A1A2E !important;
+}
+
+[data-testid="stSidebar"] * {
+    color: #AAAAAA !important;
+}
+
+[data-testid="stSidebarNav"] a {
+    border-left: 3px solid transparent;
+    transition: all 0.15s;
+    padding: 10px 16px !important;
+}
+
+[data-testid="stSidebarNav"] a:hover {
+    background: rgba(225, 6, 0, 0.12) !important;
+    border-left: 3px solid #E10600 !important;
+    color: #E10600 !important;
+}
+
+[data-testid="stSidebarNav"] a[aria-current="page"] {
+    background: rgba(225, 6, 0, 0.12) !important;
+    border-left: 3px solid #E10600 !important;
+    color: #E10600 !important;
+    font-weight: 700 !important;
+}
+
+/* ---------- PAGE HEADER / TITLE ---------- */
+h1 {
+    font-size: 28px !important;
+    font-weight: 800 !important;
+    letter-spacing: 1px !important;
+    color: #FFFFFF !important;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.5px !important;
+    color: #FFFFFF !important;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    color: #CCCCCC !important;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+/* ---------- STAT CARDS (st.metric) ---------- */
+[data-testid="stMetric"] {
+    background: #0D0D1A !important;
+    border: 1px solid #1A1A2E !important;
+    border-top: 3px solid #E10600 !important;
+    border-radius: 6px !important;
+    padding: 16px 20px !important;
+    transition: transform 0.2s;
+}
+
+[data-testid="stMetric"]:hover {
+    transform: translateY(-2px);
+}
+
+[data-testid="stMetricLabel"] {
+    color: #666666 !important;
+    font-size: 11px !important;
+    letter-spacing: 2px !important;
+    text-transform: uppercase;
+}
+
+[data-testid="stMetricValue"] {
+    color: #FFFFFF !important;
+    font-size: 22px !important;
+    font-weight: 800 !important;
+}
+
+[data-testid="stMetricDelta"] {
+    font-size: 11px !important;
+}
+
+/* ---------- CONTAINERS / CARDS (st.container) ---------- */
+[data-testid="stVerticalBlock"] > [data-testid="stVerticalBlock"] {
+    background: #0D0D1A;
+    border: 1px solid #1A1A2E;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+/* ---------- DATAFRAMES / TABLES ---------- */
+[data-testid="stDataFrame"] {
+    background: #0D0D1A !important;
+    border: 1px solid #1A1A2E !important;
+    border-radius: 6px !important;
+    overflow: hidden;
+}
+
+[data-testid="stDataFrame"] th {
+    background: #111122 !important;
+    color: #555555 !important;
+    font-size: 11px !important;
+    letter-spacing: 2px !important;
+    text-transform: uppercase;
+    padding: 10px 20px !important;
+    border-bottom: 1px solid #1A1A2E !important;
+}
+
+[data-testid="stDataFrame"] td {
+    color: #AAAAAA !important;
+    padding: 12px 20px !important;
+    border-bottom: 1px solid #111111 !important;
+    font-family: 'Barlow Condensed', monospace !important;
+}
+
+[data-testid="stDataFrame"] tr:hover td {
+    background: rgba(255, 255, 255, 0.04) !important;
+}
+
+/* ---------- BUTTONS ---------- */
+.stButton > button {
+    background: #0D0D1A !important;
+    border: 1px solid #1A1A2E !important;
+    color: #AAAAAA !important;
+    border-radius: 4px !important;
+    font-family: 'Barlow Condensed', sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 13px !important;
+    letter-spacing: 0.5px !important;
+    padding: 8px 16px !important;
+    transition: all 0.15s !important;
+    text-transform: uppercase;
+}
+
+.stButton > button:hover {
+    background: rgba(225, 6, 0, 0.15) !important;
+    border-color: #E10600 !important;
+    color: #E10600 !important;
+}
+
+.stButton > button:active,
+.stButton > button:focus {
+    border-color: #E10600 !important;
+    color: #E10600 !important;
+    box-shadow: none !important;
+}
+
+/* ---------- SELECT BOX / DROPDOWNS ---------- */
+[data-testid="stSelectbox"] > div > div {
+    background: #0D0D1A !important;
+    border: 1px solid #1A1A2E !important;
+    border-radius: 4px !important;
+    color: #E8E8E8 !important;
+}
+
+[data-testid="stSelectbox"] label {
+    color: #666666 !important;
+    font-size: 11px !important;
+    letter-spacing: 2px !important;
+    text-transform: uppercase;
+}
+
+/* ---------- MULTISELECT ---------- */
+[data-testid="stMultiSelect"] > div > div {
+    background: #0D0D1A !important;
+    border: 1px solid #1A1A2E !important;
+    border-radius: 4px !important;
+}
+
+[data-testid="stMultiSelect"] label {
+    color: #666666 !important;
+    font-size: 11px !important;
+    letter-spacing: 2px !important;
+    text-transform: uppercase;
+}
+
+/* Tag pills inside multiselect */
+[data-testid="stMultiSelect"] span[data-baseweb="tag"] {
+    background: rgba(225, 6, 0, 0.2) !important;
+    border: 1px solid #E10600 !important;
+    color: #E10600 !important;
+    border-radius: 4px !important;
+}
+
+/* ---------- SLIDERS ---------- */
+[data-testid="stSlider"] label {
+    color: #666666 !important;
+    font-size: 11px !important;
+    letter-spacing: 2px !important;
+    text-transform: uppercase;
+}
+
+[data-testid="stSlider"] [data-baseweb="slider"] div[role="slider"] {
+    background: #E10600 !important;
+}
+
+/* ---------- RADIO BUTTONS ---------- */
+[data-testid="stRadio"] label {
+    color: #AAAAAA !important;
+    font-size: 13px !important;
+}
+
+[data-testid="stRadio"] input:checked + div {
+    border-color: #E10600 !important;
+    background: #E10600 !important;
+}
+
+/* ---------- CHECKBOXES ---------- */
+[data-testid="stCheckbox"] label {
+    color: #AAAAAA !important;
+}
+
+/* ---------- EXPANDERS ---------- */
+[data-testid="stExpander"] {
+    background: #0D0D1A !important;
+    border: 1px solid #1A1A2E !important;
+    border-radius: 6px !important;
+}
+
+[data-testid="stExpander"] summary {
+    color: #AAAAAA !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.5px;
+}
+
+[data-testid="stExpander"] summary:hover {
+    color: #E10600 !important;
+}
+
+/* ---------- TABS ---------- */
+[data-testid="stTabs"] [role="tablist"] {
+    border-bottom: 1px solid #1A1A2E !important;
+    gap: 0 !important;
+}
+
+[data-testid="stTabs"] [role="tab"] {
+    background: transparent !important;
+    color: #666666 !important;
+    border-bottom: 3px solid transparent !important;
+    font-weight: 600 !important;
+    font-size: 13px !important;
+    letter-spacing: 0.5px !important;
+    text-transform: uppercase;
+    padding: 10px 20px !important;
+    transition: all 0.15s;
+}
+
+[data-testid="stTabs"] [role="tab"]:hover {
+    color: #AAAAAA !important;
+}
+
+[data-testid="stTabs"] [role="tab"][aria-selected="true"] {
+    color: #E10600 !important;
+    border-bottom: 3px solid #E10600 !important;
+}
+
+/* ---------- INFO / WARNING / ERROR BOXES ---------- */
+[data-testid="stInfo"] {
+    background: rgba(0, 176, 255, 0.08) !important;
+    border: 1px solid rgba(0, 176, 255, 0.3) !important;
+    border-radius: 4px !important;
+    color: #00B0FF !important;
+}
+
+[data-testid="stWarning"] {
+    background: rgba(255, 128, 0, 0.08) !important;
+    border: 1px solid rgba(255, 128, 0, 0.3) !important;
+    border-radius: 4px !important;
+    color: #FF8000 !important;
+}
+
+[data-testid="stError"] {
+    background: rgba(225, 6, 0, 0.08) !important;
+    border: 1px solid rgba(225, 6, 0, 0.3) !important;
+    border-radius: 4px !important;
+    color: #E10600 !important;
+}
+
+[data-testid="stSuccess"] {
+    background: rgba(0, 200, 83, 0.08) !important;
+    border: 1px solid rgba(0, 200, 83, 0.3) !important;
+    border-radius: 4px !important;
+    color: #00C853 !important;
+}
+
+/* ---------- PROGRESS BAR ---------- */
+[data-testid="stProgress"] > div > div {
+    background: #E10600 !important;
+}
+
+/* ---------- SCROLLBAR ---------- */
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0A0A14;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #E10600;
+    border-radius: 2px;
+}
+
+/* ---------- DIVIDER ---------- */
+hr {
+    border-color: #1A1A2E !important;
+}
+
+/* ---------- PLOTLY CHARTS (transparent bg) ---------- */
+.js-plotly-plot .plotly,
+.js-plotly-plot .plotly .main-svg {
+    background: transparent !important;
+}
+
+/* ---------- SPINNER ---------- */
+[data-testid="stSpinner"] {
+    color: #E10600 !important;
+}
+
+/* ---------- TOP HEADER BAR ---------- */
+[data-testid="stHeader"] {
+    background: linear-gradient(to right, #0D0D1A, #06060D) !important;
+    border-bottom: 1px solid #1A1A2E !important;
+}
+
+/* ---------- HIDE STREAMLIT BRANDING (optional) ---------- */
+#MainMenu { visibility: hidden; }
+footer { visibility: hidden; }
